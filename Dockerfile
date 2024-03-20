@@ -1,4 +1,10 @@
-FROM ubuntu:latest
-LABEL authors="a.bogomolov"
+FROM python
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /app
+
+COPY . .
+
+
+
+
+CMD [ "python", "main.py" ]
